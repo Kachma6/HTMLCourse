@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course</title>
+</head>
+
+<body>
+
+    <h1>HTML Course</h1>
+
+    <section>
+        <h2>Content</h2>
+        <a href="#overview">Conceptos de HTML</a>
+        <a href="">Docuement Structure</a>
+        <a href="">Metadata</a>
+        <a href="">Semantic HTML</a>
+        <a href="">Heading and sections</a>
+        <a href="">Attributes</a>
+        <a href="">Text basics</a>
+        <a href="">Links</a>
+        <a href="">Lists</a>
+        <a href="">Navigation</a>
+        <a href="">Tables</a>
+        <a href="">Forms</a>
+        <a href="">Images</a>
+        <a href="">Audio and Video</a>
+        <a href="">Template, slot. and shadow</a>
+        <a href="">HTML apis</a>
+        <a href="">Focus</a>
+        <a href="">Other inline text elements</a>
+        <a href="">Details and summary</a>
+        <a href="">Dialog</a>
+
+    </section>
+
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <article>
+            <p><strong>HyperText Markup Language</strong>, or <em>HTML</em>, is the standard markup language for
+                describing the structure of documents displayed on the web. HTML consists of a series of elements and
+                attributes which are used to mark up all the components of a document to structure it in a meaningful
+                way.</p>
+            <h4>Element</h4>
+            <img src="./images/element.png" alt="Etiqueta html">
+            <p>HTML is very, very forgiving. For example, if we omit the closing </li> tags, the closing tags are
+                implied.</p>
+
+            <pre><code>
+                ul
+                     li Blendan Smooth
+                     li Hoover Sukhdeep
+                     li Toasty McToastface
+                /ul
+            </code></pre>
+
+            <a href="https://html.spec.whatwg.org/multipage/syntax.html#optional-tags">Optional elements</a>
+
+            <h4>Replaced and non-replaced Elements</h4>
+            <h5>Non-replaced elements</h5>
+            <p>The paragraph, header, and lists marked up in the earlier section are all non-replaced. Non-replaced
+                elements have opening and (sometimes optional) closing tags that surround them and may include text and
+                other tags as sub-elements. </p>
+            <p>El navegador reenderiza directamente ese contenido</p>
+            <ul>
+                <li>div</li>
+                <li>span</li>
+                <li>p</li>
+                <li>h1...h2</li>
+                <li>a</li>
+                <li>ul, li</li>
+                <li>section, article</li>
+            </ul>
+            <h5>Replaced elements</h5>
+            <p>Elementos html cuyo contenido no esta definido por html, sino que viene desde afuera, fuente externa como imagenes, videos, frames que reemplaza el contenido con algo que el elemento reenderiza.</p>
+            <p>Replaced elements are replaced by objects, be it a graphical user interface (UI) widget in the case of most form controls, or a raster or scalable image file in the case of most images.</p>
+
+            <p> Tags Examples </p>
+            <ul>
+                <li>img</li>
+                <li>video</li>
+                <li>audio</li>
+                <li>iframe</li>
+                <li>object</li>
+                <li>embed</li>
+                <li>input</li>
+            </ul>
+
+            <h5>Void element</h5>
+            <p>Un void element (elemento vacío) es un elemento HTML que no tiene contenido y no necesita etiqueta de cierre.</p>
+           <pre> <code>
+                input type="range"
+                img src="switch.svg" alt="light switch"
+            </code></pre>
+
+            <p>Void elements cannot contain text content or nested elements. Void elements include br, col, embed, hr, img, input, link, meta, source, track, and wbr, among others.</p>
+
+
+            <article>
+                <h4>Atribute</h4>
+                <p>Attributes provide information about the element.</p>
+                <p>Los atributos ayudaran a como tu contenido sera visible por motores de busqueda.</p>
+                <img src="./images/attribute.png" alt="" ismap>
+
+                <p>Note that if an attribute value is case-sensitive in HTML, it is case-sensitive when used as part of an attribute selector in CSS and in JavaScript.</p>
+
+            </article>
+
+            <article>
+                <h5>Element, attributes and JS</h5>
+                <p>The Document Object Model (DOM) is the data representation of the structure and content of the HTML document. As the browser parses HTML, it creates a JavaScript object for every element and section of text encountered. These objects are called nodes—element nodes and text nodes, respectively.There is an interface to define the functionality of every HTML element. The HTML DOM API provides access to and control of every HTML element via the DOM</p>
+            </article>
+
+        </article>
+
+
+
+    </section>
+
+</body>
+
+</html>
