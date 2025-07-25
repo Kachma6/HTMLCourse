@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>HTML Course</title>
 </head>
 
@@ -14,7 +15,7 @@
     <section>
         <h2>Content</h2>
         <a href="#overview">Conceptos de HTML</a>
-        <a href="">Docuement Structure</a>
+        <a href="#document-structure">Docuement Structure</a>
         <a href="">Metadata</a>
         <a href="">Semantic HTML</a>
         <a href="">Heading and sections</a>
@@ -75,8 +76,10 @@
                 <li>section, article</li>
             </ul>
             <h5>Replaced elements</h5>
-            <p>Elementos html cuyo contenido no esta definido por html, sino que viene desde afuera, fuente externa como imagenes, videos, frames que reemplaza el contenido con algo que el elemento reenderiza.</p>
-            <p>Replaced elements are replaced by objects, be it a graphical user interface (UI) widget in the case of most form controls, or a raster or scalable image file in the case of most images.</p>
+            <p>Elementos html cuyo contenido no esta definido por html, sino que viene desde afuera, fuente externa como
+                imagenes, videos, frames que reemplaza el contenido con algo que el elemento reenderiza.</p>
+            <p>Replaced elements are replaced by objects, be it a graphical user interface (UI) widget in the case of
+                most form controls, or a raster or scalable image file in the case of most images.</p>
 
             <p> Tags Examples </p>
             <ul>
@@ -90,13 +93,15 @@
             </ul>
 
             <h5>Void element</h5>
-            <p>Un void element (elemento vacío) es un elemento HTML que no tiene contenido y no necesita etiqueta de cierre.</p>
-           <pre> <code>
+            <p>Un void element (elemento vacío) es un elemento HTML que no tiene contenido y no necesita etiqueta de
+                cierre.</p>
+            <pre> <code>
                 input type="range"
                 img src="switch.svg" alt="light switch"
             </code></pre>
 
-            <p>Void elements cannot contain text content or nested elements. Void elements include br, col, embed, hr, img, input, link, meta, source, track, and wbr, among others.</p>
+            <p>Void elements cannot contain text content or nested elements. Void elements include br, col, embed, hr,
+                img, input, link, meta, source, track, and wbr, among others.</p>
 
 
             <article>
@@ -105,18 +110,61 @@
                 <p>Los atributos ayudaran a como tu contenido sera visible por motores de busqueda.</p>
                 <img src="./images/attribute.png" alt="" ismap>
 
-                <p>Note that if an attribute value is case-sensitive in HTML, it is case-sensitive when used as part of an attribute selector in CSS and in JavaScript.</p>
+                <p>Note that if an attribute value is case-sensitive in HTML, it is case-sensitive when used as part of
+                    an attribute selector in CSS and in JavaScript.</p>
 
             </article>
 
             <article>
                 <h5>Element, attributes and JS</h5>
-                <p>The Document Object Model (DOM) is the data representation of the structure and content of the HTML document. As the browser parses HTML, it creates a JavaScript object for every element and section of text encountered. These objects are called nodes—element nodes and text nodes, respectively.There is an interface to define the functionality of every HTML element. The HTML DOM API provides access to and control of every HTML element via the DOM</p>
+                <p>The Document Object Model (DOM) is the data representation of the structure and content of the HTML
+                    document. As the browser parses HTML, it creates a JavaScript object for every element and section
+                    of text encountered. These objects are called nodes—element nodes and text nodes, respectively.There
+                    is an interface to define the functionality of every HTML element. The HTML DOM API provides access
+                    to and control of every HTML element via the DOM</p>
             </article>
 
         </article>
 
 
+
+    </section>
+
+    <section id="document-structure">
+
+        <h2>Document Structure</h2>
+        <p>The head of the document isn't visible to the sighted visitor, it is vital to make your site function. It
+            contains all the meta information, including information for search engines and social media results, icons
+            for the browser tab and mobile home screen shortcut, and the behavior and presentation of your content. </p>
+
+        <ul>
+            <li> !DOCTYPE html: The doctype tells the browser to use standards mode. En el contexto de desarrollo web,
+                los "quirks mode" y "standards mode" (modo de compatibilidad y modo estándar) son modos de renderizado
+                que los navegadores usan para decidir cómo interpretar y mostrar una página HTML.</li>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modo</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🧟 Quirks Mode</td>
+                        <td>Interpreta el HTML/CSS como en los navegadores antiguos (con errores y todo).</td>
+                    </tr>
+                    <tr>
+                        <td>✅ Standards Mode</td>
+                        <td>Usa el comportamiento correcto según los estándares modernos (W3C).</td>
+                    </tr>
+                </tbody>
+            </table>
+            <li>html tag: It has an important attribute "lang" for language</li>
+            <li>head tag</li>
+
+
+
+        </ul>
 
     </section>
 
